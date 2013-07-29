@@ -1,0 +1,76 @@
+/*
+Theme Name: Touchfolio
+Theme URI: http://dimsemenov.com/themes/touchfolio/
+Description: Fast and simple portfolio theme for creative people
+Author: Dmitry Semenov
+Author URI: http://www.dimsemenov.com
+Version: 0.8
+License: http://dimsemenov.com/themes/touchfolio/license.txt
+*/
+/* Theme CSS can be changed in selected skin less file (by default style-touchfolio-default.less). Read theme documentation for more info. */
+/*
+
+/***********************************************************************************
+
+Portfolio
+
+************************************************************************************/
+/*List-style-type makes sure there aren't any bullets in front of the buttons*/
+.load-portfolio {
+    width: 610px;
+    height: 22px;
+    margin: 20px 0;
+    list-style-type: none;
+}
+/*Floating left lines them up in a horizontal row, the right margin spaces them out*/
+.load-portfolio li {
+    height: 22px;
+    float: left;
+    margin: 0 10px 0 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family:  'Arvo', serif;
+    font-size: 12px;
+}
+/*The padding and background color are what make it look like a button*/
+.load-portfolio li a {
+    height: 20px;
+    padding: 4px 5px;
+    background: #8c8272;
+    color: #e5e5e5;
+    text-decoration: none;
+}
+/*When we hover on the button, the colors change*/
+.load-portfolio li a:hover {
+    background: #d9dac0;
+    color: #8c8272;
+}
+/*Let's make the active job type a different color as well*/
+.load-portfolio li.active a {
+    background: #f85d7e;
+}
+/*Again getting rid of the bullets*/
+.portfolio-grid {
+    width: 100%;
+    margin: 0;
+    list-style-type: none;
+}
+/*Floating left gets us the grid. There's some stuff in here you probably could omit, like the height and width.*/
+.portfolio-grid li {
+    width: 304px;
+    height: 204px;
+    float: left;
+    margin:0 20px 0 0;
+    text-align: center;
+}
+/*Let's get that title to display like a nice label. If you wanted to get really fancy you could add some opacity values.*/
+.portfolio-grid .portfolio-title {
+    display: block;
+    width: auto;
+    padding: 3px 5px;
+    background: #D9DAC0;
+    position: relative;
+    bottom: 16px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
